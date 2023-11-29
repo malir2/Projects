@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Toggle_menu from "./navbar_components/Toggle_menu";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const profileRef = useRef(null);
@@ -53,13 +54,17 @@ function Navbar() {
       } transition-all ease-in-out duration-75 z-10 border-b md:h-[50px]`}
     >
       <div>
-        <h1 className="text-4xl text-white font-bold font-primary ml-[20px] sm:text-sm">
-          Constructor
-        </h1>
+        <Link to="/">
+          <h1 className="text-4xl text-white font-bold font-primary ml-[20px] sm:text-sm">
+            Constructor
+          </h1>
+        </Link>
       </div>
 
       <ul className="flex items-center gap-[100px] justify-center font-secondary text-white lg:hidden">
-        <li>Gallery</li>
+        <Link to="/gallery">
+          <li>Gallery</li>
+        </Link>
         <li>Services</li>
         <li>Contact</li>
         <li>About</li>
