@@ -37,8 +37,8 @@ function Navbar() {
   useEffect(() => {
     window.onscroll = () => {
       if (
-        document.body.scrollTop > 200 ||
-        document.documentElement.scrollTop > 200
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
       ) {
         setNavColor(!navColor);
       } else {
@@ -51,7 +51,7 @@ function Navbar() {
     <nav
       className={` h-[80px] flex justify-between items-center fixed w-full top-0 ${
         navColor ? "bg-transparent" : "bg-primary"
-      } transition-all ease-in-out duration-75 z-10 border-b md:h-[50px]`}
+      } transition-all ease-in-out duration-75 border-b md:h-[50px] z-20`}
     >
       <div>
         <Link to="/">
@@ -65,9 +65,15 @@ function Navbar() {
         <Link to="/gallery">
           <li>Gallery</li>
         </Link>
-        <li>Services</li>
-        <li>Contact</li>
-        <li>About</li>
+        <Link to="/services">
+          <li>Services</li>
+        </Link>
+        <Link to="/contact">
+          <li>Contact</li>
+        </Link>
+        <Link to="/about">
+          <li>About</li>
+        </Link>
       </ul>
 
       <div className="flex items-center gap-[30px]">
@@ -222,63 +228,67 @@ function Navbar() {
         } transition-all duration-100 ease-in-out`}
       >
         <div className="flex items-center gap-[20px] text-white font-secondary">
-          <div>
-            <svg
-              className="w-[32px] fill-white"
-              version="1.1"
-              id="_x32_"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 512 512"
-              xml:space="preserve"
-              fill="#000000"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                {" "}
-                <style type="text/css"> </style>{" "}
-                <g>
+          <Link to="/login">
+            <div>
+              <svg
+                className="w-[32px] fill-white"
+                version="1.1"
+                id="_x32_"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
                   {" "}
-                  <path
-                    class="st0"
-                    d="M155.81,0v173.889h33.417V33.417h235.592l-74.87,50.656c-8.469,5.727-13.535,15.289-13.535,25.503v286.24 H189.227V282.079H155.81v147.154h180.604v70.93c0,4.382,2.423,8.404,6.29,10.451c3.867,2.056,8.558,1.811,12.189-0.644 l119.318-80.736V0H155.81z"
-                  ></path>{" "}
-                  <path
-                    class="st0"
-                    d="M228.657,290.4c0,1.844,1.068,3.524,2.75,4.3c1.664,0.775,3.638,0.514,5.042-0.685l78.044-66.035 l-78.044-66.034c-1.404-1.2-3.378-1.46-5.042-0.686c-1.681,0.775-2.75,2.456-2.75,4.3v33.392H37.79v58.064h190.868V290.4z"
-                  ></path>{" "}
-                </g>{" "}
-              </g>
-            </svg>
-          </div>
-          <h1>Log In</h1>
+                  <style type="text/css"> </style>{" "}
+                  <g>
+                    {" "}
+                    <path
+                      class="st0"
+                      d="M155.81,0v173.889h33.417V33.417h235.592l-74.87,50.656c-8.469,5.727-13.535,15.289-13.535,25.503v286.24 H189.227V282.079H155.81v147.154h180.604v70.93c0,4.382,2.423,8.404,6.29,10.451c3.867,2.056,8.558,1.811,12.189-0.644 l119.318-80.736V0H155.81z"
+                    ></path>{" "}
+                    <path
+                      class="st0"
+                      d="M228.657,290.4c0,1.844,1.068,3.524,2.75,4.3c1.664,0.775,3.638,0.514,5.042-0.685l78.044-66.035 l-78.044-66.034c-1.404-1.2-3.378-1.46-5.042-0.686c-1.681,0.775-2.75,2.456-2.75,4.3v33.392H37.79v58.064h190.868V290.4z"
+                    ></path>{" "}
+                  </g>{" "}
+                </g>
+              </svg>
+            </div>
+            <h1>Log In</h1>
+          </Link>
         </div>
         <div className="flex items-center gap-[20px] text-white font-secondary">
-          <div>
-            <svg
-              className="w-[32px] fill-white"
-              fill="#000000"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M16 13v-2H7V8l-5 4 5 4v-3z"></path>
-                <path d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path>
-              </g>
-            </svg>
-          </div>
-          <h1>Log In</h1>
+          <Link to="/logout">
+            <div>
+              <svg
+                className="w-[32px] fill-white"
+                fill="#000000"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M16 13v-2H7V8l-5 4 5 4v-3z"></path>
+                  <path d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path>
+                </g>
+              </svg>
+            </div>
+            <h1>Sign Up</h1>
+          </Link>
         </div>
       </div>
       <div

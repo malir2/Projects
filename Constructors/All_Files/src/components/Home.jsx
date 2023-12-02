@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./home_component/Header";
 import Gallery from "./home_component/Gallery";
-import { motion } from "framer-motion";
 import Contracts from "./home_component/Contracts";
 import Testimonial from "./home_component/Testimonial";
 

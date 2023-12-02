@@ -5,12 +5,12 @@ function Gallery_Headrer() {
   return (
     <div className="bg-secondary h-screen lg:h-[600px] md:h-[300px] flex items-center w-full overflow-hidden">
       <div className="relative h-[60%] w-full top-[40px] md:top-[20px]">
-        <div className="absolute top-[30%] md:top-[15%] z-10 w-[56%] left-[30px]">
+        <div className="absolute top-[30%] md:top-[15%] z-10 w-[60%] left-[200px] sm:left-[10px]">
           <motion.h1
             initial={{ x: "-80%", opacity: "0.3" }}
             animate={{ x: 0, opacity: "1" }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="text-gray-700 mb-[20px] text-sm md:text-[8px]"
+            className="text-gray-700 mb-[20px] sm:mb-[10px] text-sm md:text-[8px]"
           >
             CUSTOM ARTITECHTURAL DESIGN
           </motion.h1>
@@ -18,10 +18,11 @@ function Gallery_Headrer() {
             initial={{ x: "100%", opacity: "0.3" }}
             animate={{ x: 0, opacity: "1" }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="text-2xl text-white font-secondary md:text-sm"
+            className="text-2xl text-white font-secondary md:text-sm sm:text-[8px]"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            similique nostrum.
+            similique nostrum. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Nisi, voluptatem?
           </motion.p>
           <motion.button
             initial={{ opacity: 0 }}
