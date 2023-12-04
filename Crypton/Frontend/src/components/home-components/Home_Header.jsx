@@ -4,7 +4,7 @@ import hero from "../../media/home-hero.png";
 
 function Home_Header() {
   return (
-    <div className="h-screen sm:h-[50vh] md:h-[70vh] flex md:flex-col md:justify-center sm:justify-between items-center w-[90%] mx-auto justify-between overflow-hidden">
+    <div className="h-screen sm:h-auto md:h-[70vh] flex md:flex-col md:justify-center sm:justify-between items-center w-[90%] mx-auto justify-between overflow-hidden">
       <motion.div
         initial={{ x: "-60vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -27,7 +27,7 @@ function Home_Header() {
         </button>
       </motion.div>
       <motion.div
-        initial={{ x: "60vw", opacity: 0 }}
+        initial={{ x: "40vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
@@ -43,7 +43,7 @@ function Home_Header() {
           }}
           src={hero}
           alt=""
-          className="h-[400px] sm:h-[250px] mt-[90px] mr-[20px]"
+          className="h-[400px] sm:h-[250px] block mt-[90px] mr-[20px] sm:mr-[5px]"
         />
       </motion.div>
     </div>
