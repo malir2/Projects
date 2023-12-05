@@ -39,7 +39,7 @@ function Home_Section_7() {
       >
         <Swiper
           modules={[Navigation, Pagination, Autoplay, A11y]}
-          className="py-[50px] w-[90%] h-[550px] sm:h-[400px] mx-auto"
+          className="py-[50px] w-[90%] h-[550px] sm:h-[400px] mx-auto px-[20px]"
           spaceBetween={40}
           slidesPerView={3}
           autoplay={{ delay: 3000 }}
@@ -71,33 +71,35 @@ function Home_Section_7() {
         >
           <SwiperSlide className="ease-linear">
             <Link>
-              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden">
-                <div className="w-full h-[60%] overflow-hidden rounded-lg">
+              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg shadow-[0px_0px_3px_1px_rgb(162,162,162)] pb-[10px]">
+                <div className="w-full h-[60%] overflow-hidden">
                   <img
                     src={blog1}
                     alt="..."
                     className="h-full w-full hover:scale-110 transition-all overflow-hidden"
                   />
                 </div>
-                <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
-                  Cryptocash is a clean, modern template clean
-                </h1>
-                <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
-                  March 20,2021 | by John Doe
-                </h2>
-                <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do Lorem ipsum dolor sit amet, consectetur{" "}
-                </p>
-                <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
-                  Read More
-                </p>
+                <div className="px-[10px]">
+                  <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
+                    Cryptocash is a clean, modern template clean
+                  </h1>
+                  <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
+                    March 20,2021 | by John Doe
+                  </h2>
+                  <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do Lorem ipsum dolor sit amet, consectetur{" "}
+                  </p>
+                  <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
+                    Read More
+                  </p>
+                </div>
               </div>
             </Link>
           </SwiperSlide>
           <SwiperSlide className="ease-linear">
             <Link>
-              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden">
+              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden shadow-[0px_0px_3px_1px_rgb(162,162,162)] pb-[10px]">
                 <div className="w-full h-[60%] overflow-hidden rounded-lg">
                   <img
                     src={blog2}
@@ -105,25 +107,27 @@ function Home_Section_7() {
                     className="h-full w-full hover:scale-110 transition-all overflow-hidden"
                   />
                 </div>
-                <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
-                  Cryptocash is a clean, modern template clean
-                </h1>
-                <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
-                  March 20,2021 | by John Doe
-                </h2>
-                <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do Lorem ipsum dolor sit amet, consectetur{" "}
-                </p>
-                <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
-                  Read More
-                </p>
+                <div className="px-[10px]">
+                  <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
+                    Cryptocash is a clean, modern template clean
+                  </h1>
+                  <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
+                    March 20,2021 | by John Doe
+                  </h2>
+                  <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do Lorem ipsum dolor sit amet, consectetur{" "}
+                  </p>
+                  <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
+                    Read More
+                  </p>
+                </div>
               </div>
             </Link>
           </SwiperSlide>
           <SwiperSlide className="ease-linear">
             <Link>
-              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden">
+              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden shadow-[0px_0px_3px_1px_rgb(162,162,162)] pb-[10px]">
                 <div className="w-full h-[60%] overflow-hidden rounded-lg">
                   <img
                     src={blog3}
@@ -131,25 +135,27 @@ function Home_Section_7() {
                     className="h-full w-full hover:scale-110 transition-all overflow-hidden"
                   />
                 </div>
-                <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
-                  Cryptocash is a clean, modern template clean
-                </h1>
-                <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
-                  March 20,2021 | by John Doe
-                </h2>
-                <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do Lorem ipsum dolor sit amet, consectetur{" "}
-                </p>
-                <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
-                  Read More
-                </p>
+                <div className="px-[10px]">
+                  <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
+                    Cryptocash is a clean, modern template clean
+                  </h1>
+                  <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
+                    March 20,2021 | by John Doe
+                  </h2>
+                  <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do Lorem ipsum dolor sit amet, consectetur{" "}
+                  </p>
+                  <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
+                    Read More
+                  </p>
+                </div>
               </div>
             </Link>
           </SwiperSlide>
           <SwiperSlide className="ease-linear">
             <Link>
-              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden">
+              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden shadow-[0px_0px_3px_1px_rgb(162,162,162)] pb-[10px]">
                 <div className="w-full h-[60%] overflow-hidden rounded-lg">
                   <img
                     src={blog1}
@@ -157,25 +163,27 @@ function Home_Section_7() {
                     className="h-full w-full hover:scale-110 transition-all overflow-hidden"
                   />
                 </div>
-                <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
-                  Cryptocash is a clean, modern template clean
-                </h1>
-                <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
-                  March 20,2021 | by John Doe
-                </h2>
-                <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do Lorem ipsum dolor sit amet, consectetur{" "}
-                </p>
-                <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
-                  Read More
-                </p>
+                <div className="px-[10px]">
+                  <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
+                    Cryptocash is a clean, modern template clean
+                  </h1>
+                  <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
+                    March 20,2021 | by John Doe
+                  </h2>
+                  <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do Lorem ipsum dolor sit amet, consectetur{" "}
+                  </p>
+                  <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
+                    Read More
+                  </p>
+                </div>
               </div>
             </Link>
           </SwiperSlide>
           <SwiperSlide className="ease-linear">
             <Link>
-              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden">
+              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden shadow-[0px_0px_3px_1px_rgb(162,162,162)] pb-[10px]">
                 <div className="w-full h-[60%] overflow-hidden rounded-lg">
                   <img
                     src={blog2}
@@ -183,25 +191,27 @@ function Home_Section_7() {
                     className="h-full w-full hover:scale-110 transition-all overflow-hidden"
                   />
                 </div>
-                <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
-                  Cryptocash is a clean, modern template clean
-                </h1>
-                <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
-                  March 20,2021 | by John Doe
-                </h2>
-                <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do Lorem ipsum dolor sit amet, consectetur{" "}
-                </p>
-                <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
-                  Read More
-                </p>
+                <div className="px-[10px]">
+                  <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
+                    Cryptocash is a clean, modern template clean
+                  </h1>
+                  <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
+                    March 20,2021 | by John Doe
+                  </h2>
+                  <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do Lorem ipsum dolor sit amet, consectetur{" "}
+                  </p>
+                  <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
+                    Read More
+                  </p>
+                </div>
               </div>
             </Link>
           </SwiperSlide>
           <SwiperSlide className="ease-linear">
             <Link>
-              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden">
+              <div className="mx-auto w-[382px] h-[420px] sm:w-[250px] sm:h-[300px] rounded-lg overflow-hidden shadow-[0px_0px_3px_1px_rgb(162,162,162)] pb-[10px]">
                 <div className="w-full h-[60%] overflow-hidden rounded-lg">
                   <img
                     src={blog3}
@@ -209,19 +219,21 @@ function Home_Section_7() {
                     className="h-full w-full hover:scale-110 transition-all overflow-hidden"
                   />
                 </div>
-                <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
-                  Cryptocash is a clean, modern template clean
-                </h1>
-                <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
-                  March 20,2021 | by John Doe
-                </h2>
-                <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do Lorem ipsum dolor sit amet, consectetur{" "}
-                </p>
-                <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
-                  Read More
-                </p>
+                <div className="px-[10px]">
+                  <h1 className="text-lg mt-[10px] sm:mt-[5px] sm:text-sm font-secondary">
+                    Cryptocash is a clean, modern template clean
+                  </h1>
+                  <h2 className="text-[12px] sm:text-[8px] font-secondary text-primary ">
+                    March 20,2021 | by John Doe
+                  </h2>
+                  <p className="mt-[10px] sm:mt-[3px] sm:text-[10px] text-gray-500 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do Lorem ipsum dolor sit amet, consectetur{" "}
+                  </p>
+                  <p className="text-primary underline font-secondary mt-[10px] sm:mt-[5px] sm:text-[10px]">
+                    Read More
+                  </p>
+                </div>
               </div>
             </Link>
           </SwiperSlide>

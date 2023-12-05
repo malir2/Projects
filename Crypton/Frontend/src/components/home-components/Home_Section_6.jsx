@@ -107,6 +107,7 @@ function Home_Section_6() {
             </motion.div>
           </div>
         </motion.div>
+
         <motion.div
           initial={{ scale: 0, opacity: 0, rotate: 0 }}
           whileInView={{ scale: 1, opacity: 1, rotate: 0 }}

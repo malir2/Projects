@@ -60,11 +60,13 @@ function Navbar() {
       } transition-all ease-in-out duration-75`}
     >
       <div>
-        <img
-          src={logo}
-          alt=""
-          className="w-[230px] hover:opacity-50 transition-all lg:ml-[35px]"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            alt=""
+            className="w-[230px] hover:opacity-50 transition-all lg:ml-[35px]"
+          />
+        </Link>
       </div>
       <div className="flex gap-[80px] items-center lg:hidden">
         <ul className="flex gap-[40px] text-sm font-semibold text-secondary items-center ">
@@ -108,7 +110,7 @@ function Navbar() {
               {/* Pages dropdown */}
 
               <div
-                className={`absolute w-[250px] h-[225px] bg-primary rounded-md top-[150%] left-[0]
+                className={`absolute w-[250px] h-[180px] bg-primary rounded-md top-[150%] left-[0]
               shadow-[0px_0px_20px_0px_#999999FF] overflow-hidden ${
                 pages ? "translate-y-0" : "translate-y-[30px]"
               } ${pages ? "visible" : "invisible"} ${
@@ -121,9 +123,7 @@ function Navbar() {
                       About
                     </li>
                   </Link>
-                  <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                    Blog
-                  </li>
+
                   <Link to="/token-sale">
                     <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
                       Token Sale
@@ -134,20 +134,22 @@ function Navbar() {
                       Contact
                     </li>
                   </Link>
-                  <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                    FAQ
-                  </li>
+                  <Link to="/faq">
+                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
+                      FAQ
+                    </li>
+                  </Link>
                 </ul>
               </div>
             </li>
           </Link>
-          <Link>
+          <Link to="/features">
             <li className="hover:text-primary">FEATURE</li>
           </Link>
-          <Link>
+          <Link to="/roadmap">
             <li className="hover:text-primary">ROADMAP</li>
           </Link>
-          <Link>
+          <Link to="/team">
             <li className="hover:text-primary">TEAM</li>
           </Link>
         </ul>
@@ -383,9 +385,6 @@ function Navbar() {
                         About
                       </li>
                     </Link>
-                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                      Blog
-                    </li>
                     <Link to="/token-sale">
                       <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
                         Token Sale
@@ -396,20 +395,22 @@ function Navbar() {
                         Contact
                       </li>
                     </Link>
-                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                      FAQ
-                    </li>
+                    <Link to="/faq">
+                      <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
+                        FAQ
+                      </li>
+                    </Link>
                   </ul>
                 </div>
               </li>
             </Link>
-            <Link>
+            <Link to="/features">
               <li>FEATURE</li>
             </Link>
-            <Link>
+            <Link to="/roadmap">
               <li>ROADMAP</li>
             </Link>
-            <Link>
+            <Link to="/team">
               <li>TEAM</li>
             </Link>
             <Link>
