@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Home_Section_6() {
   const divVariant = {
     initial: {
-      x: "-20vh",
+      x: "-20vw",
       opacity: 0,
     },
     visible: {
@@ -19,7 +19,7 @@ function Home_Section_6() {
   };
   const contentVariant = {
     initial: {
-      x: "-20vh",
+      x: "-20vw",
       opacity: 0,
     },
     visible: {

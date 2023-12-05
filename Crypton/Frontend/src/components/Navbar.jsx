@@ -68,7 +68,7 @@ function Navbar() {
       </div>
       <div className="flex gap-[80px] items-center lg:hidden">
         <ul className="flex gap-[40px] text-sm font-semibold text-secondary items-center ">
-          <Link>
+          <Link to="/">
             <li className="hover:text-primary">
               <p>HOME</p>
             </li>
@@ -116,18 +116,24 @@ function Navbar() {
                 } transition-all`}
               >
                 <ul className="w-full h-full flex flex-col">
-                  <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                    About
-                  </li>
+                  <Link to="/about">
+                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
+                      About
+                    </li>
+                  </Link>
                   <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
                     Blog
                   </li>
-                  <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                    Token Sale
-                  </li>
-                  <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                    Contact
-                  </li>
+                  <Link to="/token-sale">
+                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
+                      Token Sale
+                    </li>
+                  </Link>
+                  <Link to="/contact">
+                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
+                      Contact
+                    </li>
+                  </Link>
                   <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
                     FAQ
                   </li>
@@ -323,7 +329,7 @@ function Navbar() {
         {/* Menu of sidebar */}
         <div className="flex ml-[20px] h-full items-center w-full">
           <ul className="flex flex-col text-sm font-semibold text-white w-full gap-[50px]">
-            <Link>
+            <Link to="/">
               <li>
                 <p>HOME</p>
               </li>
@@ -372,18 +378,24 @@ function Navbar() {
               } transition-all `}
                 >
                   <ul className="w-full h-full flex flex-col text-primary">
-                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                      About
-                    </li>
+                    <Link to="/about">
+                      <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
+                        About
+                      </li>
+                    </Link>
                     <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
                       Blog
                     </li>
-                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                      Token Sale
-                    </li>
-                    <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
-                      Contact
-                    </li>
+                    <Link to="/token-sale">
+                      <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
+                        Token Sale
+                      </li>
+                    </Link>
+                    <Link to="/contact">
+                      <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
+                        Contact
+                      </li>
+                    </Link>
                     <li className="bg-white p-3 border-b border-gray-300 hover:translate-x-[5px] transition-all">
                       FAQ
                     </li>

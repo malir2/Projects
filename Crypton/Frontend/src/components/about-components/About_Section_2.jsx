@@ -1,72 +1,73 @@
 import React from "react";
-import mobile from "../../media/mobile.png";
+import circle from "../../media/circle.png";
+import dots from "../../media/dots.png";
 import { motion } from "framer-motion";
 
-function Home_Section_8() {
-  const divVariant = {
-    initial: {
-      x: "40vw",
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        when: "beforeChildren",
-        staggerChildren: 0.1,
-      },
-    },
+function About_Section_2() {
+  const imageVariants = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: "-30vw" },
   };
-  const contentVariant = {
-    initial: {
-      x: "40vw",
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-      },
-    },
+  const contentVariants = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: "40vw" },
   };
 
   return (
-    <div className="h-auto pt-[50px] bg-third overflow-hidden">
-      <div className="flex lg:flex-col-reverse w-[90%] mx-auto justify-around items-center gap-[120px]">
-        <motion.img
-          initial={{ y: "60vh", opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 1, duration: 1 }}
-          src={mobile}
-          alt=""
-          className="w-[50%] ml-[30px]"
-        />
-        <motion.div
-          variants={divVariant}
-          initial="initial"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="ml-[20px]"
-        >
-          <h1 className=" text-primary font-secondary sm:text-sm">ICO APPS</h1>
-          <h1 className=" sm:text-4xl text-gray-950 text-5xl font-secondary mt-[10px] font-extrabold">
-            ICO Mobile App
-          </h1>
-          <p className=" mt-[20px] text-gray-500 text-sm sm:text-[8px] w-[90%]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley also the
-            leap into electronic typesetting, remaining essentially unchanged.
-          </p>
-          <div className="w-[100%] md:w-[90%] flex flex-col justify-center">
-            <ul className="mt-[30px]">
-              <motion.li
-                variants={contentVariant}
-                className="flex text-sm text-gray-500 items-center gap-[10px] mb-[5px]"
-              >
+    <div className="h-auto bg-white py-[50px] md:mt-[400px] sm:mt-[100px] sm:w-full overflow-hidden">
+      <div>
+        <div className="flex justify-around md:flex-col items-center overflow-hidden">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={imageVariants}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="w-[30%] md:w-[85%] relative h-[500px] sm:h-[300px]  flex items-center justify-center"
+          >
+            <motion.div
+              animate={{
+                scale: [1, 1.4, 1],
+                transition: {
+                  duration: 4,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                },
+              }}
+              style={{ backgroundImage: `url(${dots})` }}
+              className="w-[300px] h-[300px] z-20 sm:hidden sm:w-[0px] sm:h-[0px] overflow-hidden"
+            ></motion.div>
+            <motion.img
+              animate={{ rotate: 360 }}
+              transition={{
+                duration: 20,
+                loop: "Infinity",
+                repeat: "Infinity",
+                ease: "linear",
+              }}
+              src={circle}
+              alt=""
+              className="absolute sm:w-[200px]"
+            />
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={contentVariants}
+            transition={{ duration: 1 }}
+            className="w-[35%] md:w-[90%] flex flex-col justify-center"
+          >
+            <h1 className="text-3xl sm:text-2xl font-secondary font-semibold">
+              We’ve built a platform to buy and sell shares.
+            </h1>
+            <p className="pt-[20px] text-sm sm:text-[10px] text-gray-900">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer
+            </p>
+            <ul className="mt-[20px]">
+              <li className="flex text-sm text-gray-900 items-center gap-[10px] mb-[5px]">
                 <span>
                   <svg
                     className="w-[30px] h-[30px] fill-primary"
@@ -89,11 +90,8 @@ function Home_Section_8() {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting
                 </p>
-              </motion.li>
-              <motion.li
-                variants={contentVariant}
-                className="flex text-sm text-gray-500 items-center gap-[10px] mb-[5px]"
-              >
+              </li>
+              <li className="flex text-sm text-gray-900 items-center gap-[10px] mb-[5px]">
                 <span>
                   <svg
                     className="w-[30px] h-[30px] fill-primary"
@@ -116,11 +114,8 @@ function Home_Section_8() {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting
                 </p>
-              </motion.li>
-              <motion.li
-                variants={contentVariant}
-                className="flex text-sm text-gray-500 items-center gap-[10px] mb-[5px]"
-              >
+              </li>
+              <li className="flex text-sm text-gray-900 items-center gap-[10px] mb-[5px]">
                 <span>
                   <svg
                     className="w-[30px] h-[30px] fill-primary"
@@ -143,16 +138,13 @@ function Home_Section_8() {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting
                 </p>
-              </motion.li>
+              </li>
             </ul>
-            <button className="text-white bg-primary font-secondary font-semibold h-[50px] w-[200px] sm:text-sm sm:w-[150px] sm:mx-auto rounded-lg hover:translate-y-[-5px] transition-all hover:shadow-[0px_20px_29px_-17px_#16d5ffFF] p-2 mt-[20px]">
-              GET THE APP NOW
-            </button>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
 }
 
-export default Home_Section_8;
+export default About_Section_2;

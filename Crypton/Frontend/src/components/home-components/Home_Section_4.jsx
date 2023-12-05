@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Timeline } from "flowbite-react";
-import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { HiCalendar } from "react-icons/hi";
 
 function Home_Section_4() {
   return (

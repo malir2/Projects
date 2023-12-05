@@ -6,6 +6,8 @@ import Home_Section_4 from "./home-components/Home_Section_4";
 import Home_Section_5 from "./home-components/Home_Section_5";
 import Home_Section_6 from "./home-components/Home_Section_6";
 import Home_Section_7 from "./home-components/Home_Section_7";
+import Home_Section_8 from "./home-components/Home_Section_8";
+import Home_Section_9 from "./home-components/Home_Section_9";
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
       <Home_Section_5 />
       <Home_Section_6 />
       <Home_Section_7 />
+      <Home_Section_8 />
+      <Home_Section_9 />
     </div>
   );
 }
